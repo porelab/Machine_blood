@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1366.0" minHeight="768.0" minWidth="1368.0" prefHeight="768.0" prefWidth="1368.0" styleClass="bgwhite" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.FirstController">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="1374.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@cloud.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scroll" layoutX="31.0" layoutY="172.0" prefHeight="533.0" prefWidth="788.0" styleClass="scrl" stylesheets="@togglecss.css" AnchorPane.leftAnchor="31.0" />
+      <ScrollPane fx:id="scrolltrial" layoutX="874.0" layoutY="233.0" prefHeight="371.0" prefWidth="446.0" styleClass="scrl" />
+      <Line endX="430.0" layoutX="880.0" layoutY="169.0" stroke="#2a91d8" />
+      <Line endX="430.0" layoutX="880.0" layoutY="230.0" stroke="#2a91d8" />
+      <Label layoutX="902.0" layoutY="166.0" prefHeight="67.0" prefWidth="89.0" text="Name" textFill="#656060" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Label layoutX="1213.0" layoutY="165.0" prefHeight="67.0" prefWidth="89.0" text="Date" textFill="#656060" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Label fx:id="sname" layoutX="893.0" layoutY="124.0" prefHeight="45.0" prefWidth="335.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Line endX="430.0" layoutX="882.0" layoutY="609.0" stroke="#2a91d8" />
+      <Line endX="750.0" layoutX="64.0" layoutY="169.0" stroke="#2a91d8" />
+      <Line endX="750.0" layoutX="70.0" layoutY="707.0" stroke="#2a91d8" />
+      <Label layoutX="48.0" layoutY="12.0" prefHeight="35.0" prefWidth="194.0" styleClass="font-montserrat-semiBold" text="My Cloud" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnprocedd" layoutX="1102.0" layoutY="659.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="217.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom" text="Generate" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnback" layoutX="1257.0" layoutY="14.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="60.0" styleClass="btnCss" text="" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="18.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="700.0" layoutX="677.5" layoutY="102.0" AnchorPane.rightAnchor="0.0">
+         <stroke>
+            <LinearGradient endX="0.08095238095238094" endY="0.6761904761904762" startX="0.6619047619047619">
+               <stops>
+                  <Stop color="#656161" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Button fx:id="filereset" layoutX="927.0" layoutY="614.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="81.0" styleClass="cmbtrasperant" text="Unselect all" textFill="#254f94" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="filelab" layoutX="884.0" layoutY="622.0" prefHeight="26.0" prefWidth="50.0" styleClass="col-gray70" text="0/1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="autosync" layoutX="662.0" layoutY="112.0" styleClass="col-gray70" text="Sync" toggleColor="#254f94">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXSpinner fx:id="syncicon" layoutX="632.0" layoutY="126.0" visible="false" AnchorPane.leftAnchor="632.0" />
+      <Button fx:id="delbtn" layoutX="880.0" layoutY="659.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="217.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom_del" text="Delete" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btndownload" layoutX="761.0" layoutY="109.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="56.0" styleClass="trsnpbtn">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@download.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic></Button>
+      <Rectangle arcHeight="500.0" arcWidth="30.0" fill="#2197ff00" height="35.0" layoutX="61.0" layoutY="126.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" width="235.0" />
+      <TextField fx:id="searchsample" layoutX="71.0" layoutY="128.0" prefHeight="32.0" prefWidth="217.0" promptText="search sample.." styleClass="uinputtextbox1" />
+      <Label fx:id="labtotfiles" layoutX="48.0" layoutY="51.0" prefHeight="26.0" prefWidth="170.0" text="0 sample / 0 files" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="288.0" layoutY="125.0" prefHeight="40.0" prefWidth="227.0" stylesheets="@togglecss1.css">
+         <children>
+            <ToggleButton fx:id="tweek" layoutX="20.0" layoutY="8.0" mnemonicParsing="false" prefWidth="60.0" styleClass="mytoggle-button" text="Week" />
+            <ToggleButton fx:id="tmonth" layoutX="80.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="mytoggle-button" text="Month" />
+            <ToggleButton fx:id="tall" layoutX="140.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="mytoggle-button" text="All" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../application/application.css" />
+      <URL value="@../application/new_application.css" />
+   </stylesheets>
+</AnchorPane>

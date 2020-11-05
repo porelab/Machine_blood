@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainroot" prefHeight="710.0" prefWidth="1368.0" styleClass="bgwhite" stylesheets="@Nnew_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.NLivetestController">
+   <children>
+      <AnchorPane layoutY="88.0" prefHeight="769.0" prefWidth="1401.0">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="3.0" prefHeight="624.0" prefWidth="830.0" stylesheets="@livegraphcss.css">
+               <children>
+                  <TabPane fx:id="tb" layoutX="100.0" layoutY="100.0" prefHeight="627.0" prefWidth="1107.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab fx:id="tbb" text="F/PT vs Pressure">
+                        <content>
+                          <AnchorPane fx:id="root" minHeight="0.0" minWidth="0.0" prefHeight="752.0" prefWidth="1015.0" />
+                        </content>
+                      </Tab>
+                    </tabs>
+                     <styleClass>
+                        <String fx:value="tab-pane5" />
+                        <String fx:value="tab-pane1" />
+                     </styleClass>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="guages" layoutX="834.0" layoutY="362.0" maxHeight="250.0" maxWidth="261.0" minHeight="144.0" minWidth="144.0" prefHeight="237.0" prefWidth="261.0" />
+            <Label fx:id="lblcurranttest" layoutX="444.0" layoutY="5.0" styleClass="font-montserrat-medium" textFill="#7c7777" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="scrollrecord" layoutX="1095.0" layoutY="362.0" prefHeight="184.0" prefWidth="261.0" />
+            <Button fx:id="recordbtn" layoutX="1095.0" layoutY="561.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="261.0" text="Record Pressure" />
+            <StackPane fx:id="videoanc" layoutX="852.0" layoutY="35.0" prefHeight="315.0" prefWidth="501.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="90.0" fitWidth="958.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Testrunning.png" />
+         </image>
+      </ImageView>
+        
+      <Button fx:id="btnabr" layoutX="1291.0" layoutY="19.0" maxHeight="53.0" maxWidth="60.0" minHeight="45.0" minWidth="60.0" mnemonicParsing="false" opacity="0.65" prefHeight="53.0" prefWidth="60.0">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cancelimgl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="startautotest" layoutX="1156.0" layoutY="18.0" maxHeight="53.0" maxWidth="60.0" minHeight="45.0" minWidth="60.0" mnemonicParsing="false" opacity="0.65" prefHeight="53.0" prefWidth="60.0" AnchorPane.leftAnchor="1220.0" AnchorPane.topAnchor="20.0">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="starttestdry" layoutX="1197.0" layoutY="709.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="160.0" text="Start Dry" visible="false" />
+      <Button fx:id="starttest" layoutX="224.0" layoutY="663.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="160.0" text="Start Bubble" visible="false" />
+      <Line layoutX="1015.0" layoutY="122.0" />
+      <Line endX="700.0" layoutX="700.5" layoutY="84.0" AnchorPane.rightAnchor="0.0">
+         <stroke>
+            <LinearGradient endX="0.08095238095238094" endY="0.6761904761904762" startX="0.6619047619047619">
+               <stops>
+                  <Stop color="#656161" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+    
+      <Button fx:id="starttestdry" layoutX="559.0" layoutY="663.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="160.0" text="Start Dry test" visible="false" />
+      <Button fx:id="starttestwet" layoutX="392.0" layoutY="663.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="160.0" text="Start Wet test" visible="false" />
+      <JFXToggleButton fx:id="autotest" layoutX="932.0" layoutY="82.0" prefHeight="56.0" prefWidth="144.0" text="Auto Test" textFill="#000000e7" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXToggleButton>
+      <Rectangle fx:id="manualblock" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="224.0" layoutY="659.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="501.0" />
+      <Label fx:id="lblfilename" alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="18.0" layoutY="10.0" prefHeight="53.0" prefWidth="341.0" styleClass="font-montserrat-medium" text="file name" textFill="WHITE" AnchorPane.leftAnchor="65.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="638.0" layoutY="33.0" prefHeight="27.0" prefWidth="271.0" styleClass="font-montserrat-medium" text=".." textFill="#978d8d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="340.0" fill="#2b63fc" layoutX="1059.0" startX="-100.0" stroke="#3d5df5" strokeWidth="3.0" AnchorPane.leftAnchor="957.5" />
+      <Label fx:id="status1" layoutX="569.0" layoutY="34.0" styleClass="font-montserrat-medium" text="Status : " textFill="#978d8d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltesttype" alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="23.0" layoutY="55.0" prefHeight="29.0" prefWidth="108.0" styleClass="font-montserrat-medium" text="Sample Id" textFill="WHITE" AnchorPane.leftAnchor="65.0" />
+      <Label fx:id="lblbpc" alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="170.0" layoutY="57.0" prefHeight="29.0" prefWidth="160.0" styleClass="font-montserrat-medium" textFill="WHITE" />
+      <ToggleButton fx:id="chamberonoff" layoutX="1006.0" layoutY="32.0" mnemonicParsing="false" text="Chamber Open" visible="false" />
+      <Button fx:id="btninfo" layoutX="98.0" layoutY="23.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" opacity="0.65" prefHeight="40.0" prefWidth="40.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@info_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnpass" layoutX="1022.0" layoutY="30.0" maxHeight="53.0" maxWidth="108.0" minHeight="29.0" minWidth="60.0" mnemonicParsing="false" opacity="0.65" prefHeight="29.0" prefWidth="81.0" text="Pass" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnfail" layoutX="1149.0" layoutY="21.0" maxHeight="53.0" maxWidth="108.0" minHeight="29.0" minWidth="60.0" mnemonicParsing="false" opacity="0.65" prefHeight="53.0" prefWidth="60.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@startimgl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="180.0" maxWidth="485.0" minHeight="180.0" minWidth="485.0" prefHeight="180.0" prefWidth="485.0" style="-fx-border-width: 5; -fx-border-color: white;" styleClass="firstpagebk" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.SkiptestpopupControll">
+	<children>
+		<ImageView fitHeight="48.0" fitWidth="198.0" layoutY="5.0" pickOnBounds="true" AnchorPane.bottomAnchor="127.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<image>
+				<Image url="@saveproject.png" />
+			</image>
+		</ImageView>
+		<Button fx:id="btncancel" layoutX="292.0" layoutY="124.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" style="-fx-background-radius: 50;" styleClass="background-col-white" text="No" textFill="#254f94" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="124.0">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Label layoutX="55.0" layoutY="30.0" styleClass="font-montserrat-semiBold" text="Confirmation" textFill="#254f94" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Label>
+		<Button fx:id="btnyes" layoutX="425.0" layoutY="163.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" style="-fx-background-radius: 50;" styleClass="background-col-white" text="Yes" textFill="#254f94" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="124.0">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Label layoutX="254.0" layoutY="112.0" />
+		<Label layoutX="17.0" layoutY="67.0" text="Do you want to skip running test ?" textFill="WHITE" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="67.0">
+			<font>
+				<Font size="22.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

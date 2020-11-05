@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" style="-fx-border-width: 5; -fx-border-color: white;" styleClass="firstpagebk" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.NteststartpopupController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="600.0" layoutX="33.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="btnstart" layoutX="560.0" layoutY="174.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="120.0" style="-fx-background-radius: 50; -fx-background-color: white;" styleClass="col-bluedark" text="Yes" textFill="#254f94" AnchorPane.leftAnchor="560.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btncancel" layoutX="371.0" layoutY="175.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="120.0" style="-fx-background-radius: 50; -fx-background-color: white;" styleClass="btn-background-white" text="Cancel" textFill="#254f94" AnchorPane.leftAnchor="424.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="254.0" layoutY="112.0" />
+      <Label layoutX="165.0" layoutY="137.0" prefHeight="31.0" prefWidth="68.0" styleClass="font-montserrat-semiBold" text="Trial?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltestcount" layoutX="128.0" layoutY="129.0" styleClass="font-montserrat-semiBold" text="1." textFill="WHITE" AnchorPane.leftAnchor="128.0" AnchorPane.topAnchor="129.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="69.0" fitWidth="351.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@saveproject.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblsname" layoutX="74.0" layoutY="24.0" styleClass="font-montserrat-semiBold" text="Confirmation" textFill="#254f94">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

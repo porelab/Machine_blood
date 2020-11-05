@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="328.0" prefWidth="576.0" styleClass="firstpagebk" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newstageerror.Splashscreen">
+   <children>
+      <ImageView fitHeight="74.0" fitWidth="258.0" layoutX="164.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.%20NYI.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="62.0" layoutY="164.0" prefHeight="57.0" prefWidth="453.0" text="Software is already running" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnclose" layoutX="241.0" layoutY="221.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Close" />
+   </children>
+</AnchorPane>

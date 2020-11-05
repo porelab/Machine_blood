@@ -1,0 +1,20 @@
+
+.mytoggle-button {
+   
+         -fx-font-family: 'Montserrat SemiBold';	
+         -fx-text-fill: #777777;
+    	-fx-background-color: #00000000;
+   		-fx-border-color: #aaaaaa;
+   		-fx-border-radius: 5px;
+   		
+		
+		}
+.mytoggle-button:selected {
+	   -fx-font-family: 'Montserrat SemiBold';	   
+    -fx-text-fill:#ffffff;
+    -fx-background-color: #2A91D8;
+-fx-border-color: #888888;
+-fx-border-radius:5px;
+   		
+}
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.DeletepopupController">
+   <children>
+      <AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" style="-fx-border-width: 5; -fx-border-color: white;" styleClass="firstpagebk" stylesheets="@../application/new_application.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="400.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@saveproject.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnstart" layoutX="545.0" layoutY="172.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" style="-fx-background-radius: 30;" styleClass="background-col-white" text="Yes" textFill="#254F94" AnchorPane.leftAnchor="545.0" AnchorPane.topAnchor="172.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="86.0" layoutY="27.0" styleClass="font-montserrat-semiBold" text="Confirmation" textFill="#254f94">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="btncancel" layoutX="405.0" layoutY="172.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" style="-fx-background-radius: 30;" styleClass="background-col-white" text="Cancel" textFill="#254F94" AnchorPane.leftAnchor="405.0" AnchorPane.topAnchor="172.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="51.0" layoutY="120.0" text="Are you sure want to Delete ? " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="lab" layoutX="51.0" layoutY="153.0" prefHeight="38.0" prefWidth="309.0" text="3 Files will be deleted" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ProgressIndicator fx:id="delind" layoutX="618.0" layoutY="36.0" prefHeight="92.0" prefWidth="68.0" progress="0.0" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

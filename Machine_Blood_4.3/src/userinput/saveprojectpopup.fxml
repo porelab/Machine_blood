@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" style="-fx-border-width: 5; -fx-border-color: white;" styleClass="firstpagebk" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.SaveprojectController">
+   <children>
+      <ImageView fitHeight="77.0" fitWidth="406.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="289.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@saveproject.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="projectname" layoutX="60.0" layoutY="121.0" maxWidth="552.0" minWidth="400.0" prefHeight="58.0" prefWidth="400.0" promptText="Enter Project Name" unFocusColor="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-medium" />
+            <String fx:value="textboxlogin" />
+            <String fx:value="col-white" />
+         </styleClass>
+      </JFXTextField>
+      <Button fx:id="btnsave" layoutX="510.0" layoutY="123.0" maxHeight="55.0" maxWidth="130.0" minHeight="55.0" minWidth="130.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="SAVE" textFill="#254f94">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="67.0" layoutY="27.0" styleClass="font-montserrat-semiBold" text="Project Name" textFill="#0d3c88">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btncancel" layoutX="651.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" styleClass="cmbtrasperant">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblerror" layoutX="73.0" layoutY="186.0" text="* Project filed required." textFill="WHITE" visible="false" />
+   </children>
+</AnchorPane>

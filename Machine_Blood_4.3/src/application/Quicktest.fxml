@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="571.0" prefWidth="967.0" styleClass="bgwhite" stylesheets="@new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QuicktestController">
+   <children>
+      <ImageView fitHeight="57.0" fitWidth="972.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@quickh.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="67.0" layoutY="13.0" styleClass="font-montserrat-semiBold" text="Quick Test" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btncancel" layoutX="915.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" styleClass="cmbtrasperant" AnchorPane.leftAnchor="915.0">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@close1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="starttest" layoutX="455.0" layoutY="497.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="150.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom-right" text="Next" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="500.0" arcWidth="40.0" fill="#bfb9b900" height="53.0" layoutX="359.0" layoutY="74.0" stroke="#bfb9b9" strokeType="INSIDE" width="222.0" />
+      <ImageView fx:id="imgdownarrow111" fitHeight="18.0" fitWidth="18.0" layoutX="547.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@downarrow.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmbsampleid" editable="true" layoutX="372.0" layoutY="78.0" minHeight="35.0" prefHeight="45.0" prefWidth="201.0" promptText="Sample ID" styleClass="cmbtrasperant" />
+      <Label layoutX="56.0" layoutY="85.0" prefHeight="30.0" prefWidth="285.0" text="Please select sample ID" textFill="#727272c4">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Line endX="880.0" layoutX="94.0" layoutY="150.0" stroke="#0e3c87" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="140.0" />
+      <RadioButton fx:id="rdmanual" layoutX="184.0" layoutY="175.0" mnemonicParsing="false" selected="true" styleClass="col-gray70" text="Manual" textFill="#797878e0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdautometed" layoutX="304.0" layoutY="177.0" mnemonicParsing="false" styleClass="col-gray70" text="Autometed" textFill="#797878e0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="46.0" layoutY="179.0" prefHeight="25.0" prefWidth="130.0" text="Test Mode" textFill="#707070bf">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <RadioButton fx:id="rdregular" layoutX="186.0" layoutY="252.0" mnemonicParsing="false" selected="true" styleClass="col-gray70" text="Regular" textFill="#797878e0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdfast" layoutX="306.0" layoutY="254.0" mnemonicParsing="false" styleClass="col-gray70" text="Fast" textFill="#797878e0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="46.0" layoutY="253.0" prefHeight="25.0" prefWidth="130.0" text="Pressure Rate" textFill="#707070bf">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Label layoutX="40.0" layoutY="387.0" prefHeight="23.0" prefWidth="110.0" text="Step-Size" textFill="#707070bf">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Label fx:id="lblnote" layoutX="184.0" layoutY="442.0" prefHeight="25.0" prefWidth="378.0" text="Note : This will plot 1 Readings in 1 Minutes" textFill="#707070bf">
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="400.0" arcWidth="50.0" fill="#bfb9b900" height="55.0" layoutX="183.0" layoutY="374.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" width="630.0" />
+      <JFXSlider fx:id="stepsizeslider" blockIncrement="1.0" cache="true" layoutX="187.0" layoutY="388.0" majorTickUnit="1.0" max="15.0" maxHeight="40.0" min="0.0" minHeight="40.0" minorTickCount="0" prefHeight="40.0" prefWidth="609.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXSlider>
+      <Rectangle arcHeight="500.0" arcWidth="55.0" fill="#2197ff00" height="60.0" layoutX="610.0" layoutY="155.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" width="285.0" />
+      <TextField fx:id="txtlotno" layoutX="613.0" layoutY="158.0" prefHeight="57.0" prefWidth="280.0" promptText="Enter Lot Number">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <styleClass>
+            <String fx:value="uinputtextbox" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </TextField>
+      <Label layoutX="466.0" layoutY="177.0" prefHeight="25.0" prefWidth="130.0" text="Lot Number" textFill="#707070bf">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <AnchorPane fx:id="ancaddsamplearea" layoutX="610.0" layoutY="304.0" minHeight="60.0" minWidth="229.0" prefHeight="60.0" prefWidth="280.0" visible="false">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="55.0" fill="#1f93ff00" height="52.0" layoutX="98.0" layoutY="4.0" stroke="#968f8f" strokeType="INSIDE" width="190.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="4.0" />
+            <TextField fx:id="txtsamplearea" layoutX="9.0" layoutY="4.0" prefHeight="52.0" prefWidth="190.0" promptText="Name" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="4.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="cmbtrasperant" />
+                  <String fx:value="col-gray70" />
+                  <String fx:value="uinputtextbox" />
+               </styleClass>
+            </TextField>
+            <Button fx:id="btnaddsamplearea" layoutX="218.0" layoutY="18.0" mnemonicParsing="false" styleClass="linear-grad-to-bottom-right" text="Add" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#1f93ff00" height="65.0" layoutX="607.0" layoutY="227.0" stroke="#666666" strokeType="INSIDE" styleClass="recanglearc" width="285.0" />
+      <ImageView fx:id="imgdownarrow4" fitHeight="25.0" fitWidth="25.0" layoutX="845.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../userinput/back.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmbsamplearea" layoutX="611.0" layoutY="235.0" prefHeight="52.0" prefWidth="266.0" promptText="Select Sample Area" styleClass="cmbtrasperant" visibleRowCount="5" />
+      <Label layoutX="467.0" layoutY="249.0" prefHeight="25.0" prefWidth="130.0" text="Sample Area" textFill="#707070bf">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Button fx:id="btndelete" layoutX="892.0" layoutY="243.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" styleClass="cmbtrasperant" text="Delete" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../userinput/deleteblue.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

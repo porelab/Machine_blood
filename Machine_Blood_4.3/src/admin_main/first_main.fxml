@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="firstpagebk" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_main.First_mainController">
+   <children>
+      <Button fx:id="btnuser" layoutX="116.0" layoutY="275.0" mnemonicParsing="false" prefHeight="260.0" prefWidth="260.0" styleClass="linear-grad-to-bottom-right">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnfiles" layoutX="1013.0" layoutY="281.0" mnemonicParsing="false" prefHeight="260.0" prefWidth="260.0" styleClass="linear-grad-to-bottom-right">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnorder" layoutX="568.0" layoutY="281.0" mnemonicParsing="false" prefHeight="260.0" prefWidth="260.0" styleClass="linear-grad-to-bottom-right">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="161.0" layoutY="48.0" styleClass="font-montserrat-semiBold" text="Admin Panel" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="115.0" layoutX="52.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../application/logo1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="82.0" prefHeight="36.0" prefWidth="170.0" text="AP - 100 , V4.1" textFill="WHITESMOKE">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="168.0" layoutY="534.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="80.0" prefWidth="149.0" style="-fx-font-weight: bold;" styleClass="font-montserrat-semiBold" text="USERS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="618.0" layoutY="540.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="80.0" prefWidth="149.0" style="-fx-font-weight: bold;" styleClass="font-montserrat-semiBold" text="ORDERS" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.topAnchor="540.0">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1067.0" layoutY="542.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="80.0" prefWidth="149.0" style="-fx-font-weight: bold;" styleClass="font-montserrat-semiBold" text="ANALYTICS" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.topAnchor="540.0">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnmainback" layoutX="1224.0" layoutY="48.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="93.0" styleClass="btnCss" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgback" fitHeight="57.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lbltimedate" layoutX="1179.0" layoutY="727.0" styleClass="font-montserrat-semiBold" text="28.05.2019 | 11:07:20 AM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@application.css" />
+      <URL value="@new_application.css" />
+   </stylesheets>
+</AnchorPane>

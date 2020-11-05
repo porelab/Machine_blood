@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="410.0" maxWidth="670.0" minHeight="180.0" minWidth="590.0" prefHeight="218.0" prefWidth="590.0" style="-fx-border-width: 2; -fx-border-color: #254f94;" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.TestinfopopupContoller">
+   <children>
+      <Label layoutX="23.0" layoutY="16.0" styleClass="font-montserrat-semiBold" text="Test Information" textFill="#254f94" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="16.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnclose" layoutX="505.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="49.0" style="-fx-background-radius: 50;" styleClass="background-col-white" text="X" textFill="#254f94" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="22.0" layoutY="63.0" prefHeight="32.0" prefWidth="100.0" text="Sample ID " textFill="#070000" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="63.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblsname" layoutX="124.0" layoutY="69.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #e1e1e1; -fx-padding: 0 0 0 5;" textFill="#070000" AnchorPane.leftAnchor="124.0" AnchorPane.topAnchor="69.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="94.0" prefHeight="32.0" prefWidth="100.0" text="BPT Thresold" textFill="#070000" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="94.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbptthresold" layoutX="124.0" layoutY="100.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #e1e1e1; -fx-padding: 0 0 0 5;" textFill="#070000" AnchorPane.leftAnchor="124.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="124.0" prefHeight="32.0" prefWidth="100.0" text="Sample Plate" textFill="#070000" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="124.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblsplate" layoutX="124.0" layoutY="130.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #e1e1e1; -fx-padding: 0 0 0 5;" textFill="#070000" AnchorPane.leftAnchor="124.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnclose1" layoutX="877.0" layoutY="17.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="49.0" style="-fx-background-radius: 50;" styleClass="background-col-white" text="X" textFill="#254f94">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="292.0" layoutY="66.0" prefHeight="32.0" prefWidth="110.0" text="Wetting Fluid" textFill="#070000" AnchorPane.topAnchor="63.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblfluid" layoutX="394.0" layoutY="72.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #e1e1e1; -fx-padding: 0 0 0 5;" textFill="#070000" AnchorPane.leftAnchor="410.0" AnchorPane.topAnchor="69.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltfactore" layoutX="292.0" layoutY="97.0" prefHeight="32.0" prefWidth="110.0" text="Tortuosity Factore" textFill="#070000">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltfactore" layoutX="394.0" layoutY="103.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #e1e1e1; -fx-padding: 0 0 0 5;" textFill="#070000" AnchorPane.leftAnchor="410.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="127.0" prefHeight="32.0" prefWidth="110.0" text="BPT-Accuracy" textFill="#070000">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbptacc" layoutX="394.0" layoutY="133.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #e1e1e1; -fx-padding: 0 0 0 5;" textFill="#070000" AnchorPane.leftAnchor="410.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="165.0" prefHeight="32.0" prefWidth="110.0" text="Test Pressure" textFill="#070000" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="157.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltestpressure" layoutX="126.0" layoutY="165.0" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #e1e1e1; -fx-padding: 0 0 0 5;" textFill="#070000" AnchorPane.leftAnchor="124.0" AnchorPane.topAnchor="162.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

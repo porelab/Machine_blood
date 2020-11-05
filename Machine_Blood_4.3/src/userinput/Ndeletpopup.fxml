@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" style="-fx-border-width: 5; -fx-border-color: white;" styleClass="firstpagebk" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.DeletpopupController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="600.0" layoutX="33.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="77.0" fitWidth="354.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@saveproject.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnyes" layoutX="467.0" layoutY="85.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="120.0" style="-fx-background-radius: 50;" styleClass="btn-background-white" text="Yes" textFill="#254f94" AnchorPane.leftAnchor="560.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="54.0" layoutY="142.0" styleClass="font-montserrat-semiBold" text="Are you sure want  to delete?" textFill="WHITE" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="129.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btncancel" layoutX="467.0" layoutY="153.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="120.0" style="-fx-background-radius: 50;" styleClass="btn-background-white" text="Cancel" textFill="#254f94" AnchorPane.leftAnchor="424.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="254.0" layoutY="112.0" />
+      <Label layoutX="54.0" layoutY="28.0" styleClass="font-montserrat-semiBold" text="Confiramtion" textFill="#254f94">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

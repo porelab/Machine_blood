@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1368.0" styleClass="bgwhite" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_order.First_orderController">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="1374.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../report/cloud.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="82.0" layoutY="23.0" prefHeight="45.0" prefWidth="117.0" styleClass="font-montserrat-semiBold" text="Order" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="23.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnback" layoutX="1267.0" layoutY="24.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="60.0" styleClass="btnCss" text="" AnchorPane.leftAnchor="1267.0" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../report/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="350.0" layoutX="13.0" layoutY="163.0" stroke="#2a91d8" />
+      <Label layoutX="18.0" layoutY="124.0" prefHeight="35.0" prefWidth="148.0" text="Order List" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Line endX="350.0" layoutX="13.0" layoutY="692.0" stroke="#2a91d8" AnchorPane.leftAnchor="12.5" AnchorPane.topAnchor="691.5" />
+      <TextField fx:id="txtnameserche" layoutX="92.0" layoutY="181.0" prefHeight="34.0" prefWidth="263.0" promptText="Enter Orderid">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="185.0" prefHeight="26.0" prefWidth="56.0" styleClass="col-gray70" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="userlist" layoutX="13.0" layoutY="227.0" prefHeight="462.0" prefWidth="356.0" styleClass="list-cell" />
+      <Line endX="350.0" layoutX="218.0" layoutY="426.0" rotate="90.0" stroke="#2a91d8" />
+      <Line endX="700.0" layoutX="687.5" layoutY="112.0">
+         <stroke>
+            <LinearGradient endX="0.08095238095238094" endY="0.6761904761904762" startX="0.6619047619047619">
+               <stops>
+                  <Stop color="#656161" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="350.0" layoutX="434.0" layoutY="163.0" stroke="#2a91d8" AnchorPane.leftAnchor="433.5" AnchorPane.topAnchor="162.5" />
+      <Label layoutX="555.0" layoutY="122.0" prefHeight="35.0" prefWidth="107.0" text="Users Info" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Label fx:id="ptrial1" layoutX="597.0" layoutY="240.0" prefHeight="21.0" prefWidth="180.0" textFill="#707070bf" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Label fx:id="ptrial2" layoutX="596.0" layoutY="290.0" prefHeight="21.0" prefWidth="180.0" textFill="#707070bf" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Label fx:id="ptrial11" layoutX="596.0" layoutY="342.0" prefHeight="21.0" prefWidth="180.0" textFill="#707070bf" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Label fx:id="lbluserid" alignment="CENTER" layoutX="467.0" layoutY="173.0" prefHeight="45.0" prefWidth="127.0" styleClass="font-montserrat-semiBold" text="-" textFill="#0e3c87" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbluemail" alignment="CENTER" layoutX="498.0" layoutY="213.0" prefHeight="45.0" prefWidth="324.0" styleClass="font-montserrat-semiBold" text="-" textFill="#0e3c87" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbluinfo" alignment="TOP_LEFT" layoutX="416.0" layoutY="264.0" prefHeight="271.0" prefWidth="409.0" styleClass="col-gray70">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="350.0" layoutX="433.5" layoutY="692.5" stroke="#2a91d8" AnchorPane.leftAnchor="433.0" AnchorPane.topAnchor="692.0" />
+      <Line endX="350.0" layoutX="652.0" layoutY="436.0" rotate="90.0" stroke="#2a91d8" AnchorPane.leftAnchor="651.5" />
+      <Label layoutX="1052.0" layoutY="122.0" prefHeight="35.0" prefWidth="154.0" text="Order History" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Line endX="350.0" layoutX="930.5" layoutY="695.5" stroke="#2a91d8" AnchorPane.leftAnchor="930.0" AnchorPane.topAnchor="695.0" />
+      <Label layoutX="1033.0" layoutY="-126.0" prefHeight="35.0" prefWidth="107.0" text="Order Info" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <JFXToggleButton fx:id="tgborderlist" layoutX="194.0" layoutY="114.0" prefHeight="56.0" prefWidth="127.0" text="Completed" />
+      <Label layoutX="146.0" layoutY="134.0" text="Pending" />
+      <Label fx:id="lblostatus" alignment="CENTER" layoutX="599.0" layoutY="174.0" prefHeight="45.0" prefWidth="180.0" styleClass="font-montserrat-semiBold" text="-" textFill="RED" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="350.0" layoutX="433.0" layoutY="567.0" stroke="#2a91d8" />
+      <Label layoutX="544.0" layoutY="530.0" prefHeight="35.0" prefWidth="154.0" text="Change Status" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Button fx:id="btnspen" disable="true" layoutX="422.0" layoutY="618.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Pending" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsrec" layoutX="514.0" layoutY="618.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="Received">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnsrun" layoutX="609.0" layoutY="618.0" mnemonicParsing="false" style="-fx-background-color: skyblue;" text="Running">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnscom" layoutX="700.0" layoutY="618.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Completed" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ScrollPane fx:id="scrollorder" layoutX="818.0" layoutY="228.0" prefHeight="289.0" prefWidth="538.0" styleClass="scrl" />
+      <Line endX="520.0" layoutX="834.0" layoutY="165.0" stroke="#2a91d8" />
+      <Line endX="520.0" layoutX="834.0" layoutY="226.0" stroke="#2a91d8" />
+      <Label alignment="CENTER" layoutX="828.0" layoutY="162.0" prefHeight="67.0" prefWidth="89.0" text="No" textFill="#656060" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Label alignment="CENTER" layoutX="1254.0" layoutY="161.0" prefHeight="67.0" prefWidth="89.0" text="Factore" textFill="#656060" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Label alignment="CENTER" layoutX="906.0" layoutY="162.0" prefHeight="67.0" prefWidth="89.0" text="Test" textFill="#656060" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Label alignment="CENTER" layoutX="1019.0" layoutY="163.0" prefHeight="67.0" prefWidth="89.0" text="Sample" textFill="#656060" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Label alignment="CENTER" layoutX="1136.0" layoutY="163.0" prefHeight="67.0" prefWidth="89.0" text="Material" textFill="#656060" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </Label>
+      <Line endX="520.0" layoutX="835.0" layoutY="518.0" stroke="#2a91d8" />
+   </children>
+   <stylesheets>
+      <URL value="@../admin_main/application.css" />
+      <URL value="@../admin_main/new_application.css" />
+   </stylesheets>
+</AnchorPane>

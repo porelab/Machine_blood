@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="625.0" style="-fx-background-color: white;" stylesheets="@new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.infoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="278.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" AnchorPane.topAnchor="35.0">
+         <fill>
+            <LinearGradient endX="0.13333333333333333" startX="0.9666666666666667" startY="1.0">
+               <stops>
+                  <Stop color="#c0c3c6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <ImageView fitHeight="62.0" fitWidth="168.0" layoutX="10.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@M19%20LogoBlack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shorticon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="44.0" layoutY="8.0" text="About M19 Lab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4e539" height="88.0" layoutX="-5.0" layoutY="313.0" stroke="#c9c3c3" strokeType="INSIDE" strokeWidth="0.0" width="625.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="312.0" />
+      <TextArea accessibleRole="TEXT" editable="false" focusTraversable="false" layoutX="186.0" layoutY="35.0" prefHeight="278.0" prefWidth="437.0" style="-fx-border-color: white;" text="Nanopore Analyzer&#10;&#10;Version: NPA - 100 (4.3)&#10;&#10;(c) Copy right M19 Lab contributors 2020.  All rights reserved. M19 Lab.&#10;We test the performance of your product Our advanced lab technology and hands on support help clients make product breakthrough.&#10;&#10;Web   : https://m19.io&#10;Email  : support@m19.io&#10;&#10;Short Cut List  (Only on working in Home Screen)&#10;&#10;  Ctrl + R   :    System refresh&#10;  Ctrl + H   :   Hard Reset&#10;  Ctrl + F   :    Full Screen&#10;  Ctrl + S   :    Start Test&#10;&#10;&#10;&#10;&#10;" wrapText="true" AnchorPane.topAnchor="35.0" />
+      <Button fx:id="btnclose" layoutX="586.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" styleClass="btn-background-white" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnok" layoutX="496.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="OK" AnchorPane.topAnchor="345.0" />
+      <Circle fill="#1f93ff00" layoutX="39.0" layoutY="356.0" radius="13.0" stroke="#bfb8b8" strokeType="INSIDE" AnchorPane.topAnchor="345.0" />
+      <Label layoutX="35.0" layoutY="343.0" text="?" textFill="#000000ba" AnchorPane.topAnchor="345.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnmanual" layoutX="68.0" layoutY="344.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Installation Manual" AnchorPane.topAnchor="345.0" />
+   </children>
+</AnchorPane>

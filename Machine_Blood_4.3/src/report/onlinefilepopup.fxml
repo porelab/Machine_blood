@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root1" prefHeight="580.0" prefWidth="800.0" styleClass="bgwhite" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.OnlinefilepopupController">
+   <children>
+      <Button fx:id="starttest" layoutX="321.0" layoutY="510.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="150.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom-right" text="Download" textFill="WHITE" AnchorPane.leftAnchor="321.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="53.0" fitWidth="456.0" pickOnBounds="true">
+         <image>
+            <Image url="@quickh.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btncancel" layoutX="732.0" layoutY="15.0" mnemonicParsing="false" textFill="#000000b6">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="cmbtrasperant" />
+            <String fx:value="textblue" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@close1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="25.0" layoutY="12.0" styleClass="font-montserrat-semiBold" text="Cloud" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scroll" layoutX="22.0" layoutY="69.0" prefHeight="427.0" prefWidth="750.0" styleClass="scrl" stylesheets="@togglecss.css" />
+      <JFXSpinner fx:id="spin" layoutX="674.0" layoutY="19.0" />
+      <Line endX="750.0" layoutX="24.0" layoutY="66.0" stroke="#2a91d8" />
+      <Line endX="750.0" layoutX="25.0" layoutY="498.0" stroke="#2a91d8" />
+      <JFXSpinner fx:id="spinload" layoutX="484.0" layoutY="521.0" visible="false" />
+      <Label fx:id="lblsuccess" layoutX="537.0" layoutY="524.0" text="Successfuly download" textFill="#264f94" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="500.0" arcWidth="30.0" fill="#2197ff00" height="35.0" layoutX="137.0" layoutY="18.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" width="308.0" />
+      <TextField fx:id="txtsearch" layoutX="146.0" layoutY="21.0" prefHeight="25.0" prefWidth="284.0" promptText="Search Sample" styleClass="uinputtextbox1" />
+   </children>
+   <stylesheets>
+      <URL value="@../application/new_application.css" />
+      <URL value="@../application/application.css" />
+   </stylesheets>
+</AnchorPane>

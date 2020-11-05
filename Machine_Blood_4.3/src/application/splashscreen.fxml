@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="350.0" prefWidth="575.0" style="-fx-background-color: #464444;" stylesheets="@new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Splashscreen">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="599.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backsplash.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="10.0" layoutY="201.0" prefHeight="99.0" prefWidth="426.0" text="(c) Copyright M19 Lab contributors 2019.  All rights reserved. M19 Lab.We test the performance of your product Our advanced lab technology and hands on support help clients make product breakthrough." textFill="#f2f2f2c9" wrapText="true" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="268.0" />
+      <ImageView fitHeight="34.0" fitWidth="72.0" layoutX="521.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gif2.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="456.0" layoutY="309.0" prefHeight="17.0" prefWidth="56.0" text="Initializing" textFill="#f5f5f5" />
+      <ImageView fitHeight="84.0" fitWidth="327.0" layoutX="154.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="154.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@1.%20NYI.png" />
+         </image>
+      </ImageView>
+      <Line endX="150.0" layoutX="261.0" layoutY="98.0" startX="-100.0" stroke="#fcfcfc" AnchorPane.leftAnchor="160.5" />
+      <Label layoutX="539.0" layoutY="8.0" text="v4.3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="109.0" text="Blood Panitration Tester" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

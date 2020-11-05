@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="firstpagebk" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditeprofileController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" layoutX="157.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#1f93ff00" height="65.0" layoutX="777.0" layoutY="189.0" stroke="WHITE" strokeType="INSIDE" styleClass="recanglearc" width="484.0" />
+      <TextField fx:id="txtindname" layoutX="792.0" layoutY="189.0" prefHeight="65.0" prefWidth="484.0" styleClass="textboxlogin">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#1f93ff00" height="65.0" layoutX="780.0" layoutY="472.0" stroke="WHITE" strokeType="INSIDE" styleClass="recanglearc" width="484.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#1f93ff00" height="65.0" layoutX="778.0" layoutY="281.0" stroke="WHITE" strokeType="INSIDE" styleClass="recanglearc" width="484.0" />
+      <TextField fx:id="txtuname1" layoutX="793.0" layoutY="281.0" prefHeight="65.0" prefWidth="484.0" promptText="User name" styleClass="textboxlogin">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#1f93ff00" height="65.0" layoutX="778.0" layoutY="376.0" stroke="WHITE" strokeType="INSIDE" styleClass="recanglearc" width="484.0" />
+      <TextField fx:id="txtemail" layoutX="793.0" layoutY="376.0" prefHeight="65.0" prefWidth="484.0" promptText="Email id" styleClass="textboxlogin">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="528.0" layoutY="203.0" prefHeight="35.0" prefWidth="220.0" styleClass="font-montserrat-medium" text="Industry Name" textFill="#ffffffcc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="528.0" layoutY="298.0" prefHeight="31.0" prefWidth="180.0" styleClass="font-montserrat-medium" text="User Name" textFill="#ffffffcc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="529.0" layoutY="392.0" prefHeight="31.0" prefWidth="180.0" styleClass="font-montserrat-medium" text="Email ID" textFill="#ffffffcc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="527.0" layoutY="488.0" prefHeight="31.0" prefWidth="180.0" styleClass="font-montserrat-medium" text="Password" textFill="#ffffffcc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltime" layoutX="1146.0" layoutY="705.0" text="07.07.2018 | 11:12:12 AM" textFill="#f5f5f5" AnchorPane.bottomAnchor="51.0" AnchorPane.rightAnchor="54.0">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgbgu" fitHeight="150.0" fitWidth="230.0" layoutX="2.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@new%20account.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imguicon" fitHeight="129.0" fitWidth="134.0" layoutX="104.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnind" layoutX="1195.0" layoutY="200.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" styleClass="cmbtrasperant" text="Change" textFill="#fffdfd" />
+      <Button fx:id="btnname" layoutX="1196.0" layoutY="293.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" styleClass="cmbtrasperant" text="Change" textFill="#fffdfd" />
+      <Button fx:id="btnemail" layoutX="1196.0" layoutY="387.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" styleClass="cmbtrasperant" text="Change" textFill="#fffdfd" />
+      <Button fx:id="btnpass" layoutX="1197.0" layoutY="480.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" styleClass="cmbtrasperant" text="Change" textFill="#fffdfd" />
+      <Label layoutX="276.0" layoutY="168.0" prefHeight="38.0" prefWidth="82.0" styleClass="font-montserrat-medium" text="Hello," textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbluid" layoutX="274.0" layoutY="131.0" prefHeight="21.0" prefWidth="260.0" styleClass="font-montserrat-semiBold" text="N0001" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnback" layoutX="1251.0" layoutY="26.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="60.0" styleClass="cmbtrasperant" text="">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back-white.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="txtuname" layoutX="345.0" layoutY="169.0" prefHeight="38.0" prefWidth="220.0" styleClass="font-montserrat-medium" text="Hello," textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnewpass" layoutX="792.0" layoutY="471.0" prefHeight="65.0" prefWidth="412.0" promptText="New Password" styleClass="textboxlogin">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label fx:id="lbltime1" layoutX="51.0" layoutY="714.0" text="PSA-100  V4.0" textFill="WHITESMOKE">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnlogout" layoutX="582.0" layoutY="627.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="230.0" styleClass="linear-grad-to-bottom-right" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

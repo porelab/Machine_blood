@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="580.0" prefWidth="1368.0" styleClass="bgwhite" stylesheets="@../userinput/Nnew_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_setting.Admin_screen1Controller">
+   <children>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="266.0" layoutY="294.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valvelc" alignment="BASELINE_CENTER" layoutX="257.0" layoutY="280.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="TRANSPARENT" height="28.0" layoutX="266.0" layoutY="365.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valveld" alignment="BASELINE_CENTER" layoutX="257.0" layoutY="351.0" text=" " toggleColor="#0f3c85" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Label layoutX="214.0" layoutY="289.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="289.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="360.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="360.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="266.0" layoutY="216.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valvelb" alignment="BASELINE_CENTER" layoutX="257.0" layoutY="202.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Label layoutX="214.0" layoutY="211.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="211.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="140.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="140.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="266.0" layoutY="144.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valvela" alignment="BASELINE_CENTER" layoutX="257.0" layoutY="130.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Label layoutX="52.0" layoutY="34.0" text="Select Letching and Non-letching Valve" textFill="#0e3c87">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Line endX="600.0" layoutX="150.0" layoutY="117.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Line endX="600.0" layoutX="150.0" layoutY="193.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Line endX="600.0" layoutX="149.0" layoutY="267.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Line endX="600.0" layoutX="150.0" layoutY="339.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Line endX="600.0" layoutX="150.0" layoutY="415.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Label layoutX="49.0" layoutY="138.0" styleClass="col-gray70" text="Valve - A" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="212.0" styleClass="col-gray70" text="Valve - B" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="289.0" styleClass="col-gray70" text="Valve - C" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="363.0" styleClass="col-gray70" text="Valve - D" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="619.0" layoutY="294.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valvelg" alignment="BASELINE_CENTER" layoutX="610.0" layoutY="280.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="TRANSPARENT" height="28.0" layoutX="619.0" layoutY="365.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valvelh" alignment="BASELINE_CENTER" layoutX="610.0" layoutY="351.0" text=" " toggleColor="#0f3c85" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Label layoutX="567.0" layoutY="289.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="673.0" layoutY="289.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="567.0" layoutY="360.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="673.0" layoutY="360.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="619.0" layoutY="216.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valvelf" alignment="BASELINE_CENTER" layoutX="610.0" layoutY="202.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Label layoutX="567.0" layoutY="211.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="673.0" layoutY="211.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="566.0" layoutY="140.0" styleClass="col-gray70" text="Off" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="672.0" layoutY="140.0" styleClass="col-gray70" text="On" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="619.0" layoutY="144.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" width="46.0" />
+      <JFXToggleButton fx:id="valvele" alignment="BASELINE_CENTER" layoutX="610.0" layoutY="130.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" />
+      <Label layoutX="402.0" layoutY="138.0" styleClass="col-gray70" text="Valve - E" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="212.0" styleClass="col-gray70" text="Valve - F" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="289.0" styleClass="col-gray70" text="Valve - G" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="363.0" styleClass="col-gray70" text="Valve - H" textFill="#bcbcbc">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Line endX="10.0" layoutX="401.0" layoutY="163.0" rotate="90.0" startX="-50.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Line endX="10.0" layoutX="401.0" layoutY="237.0" rotate="90.0" startX="-50.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Line endX="10.0" layoutX="402.0" layoutY="309.0" rotate="90.0" startX="-50.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Line endX="10.0" layoutX="401.0" layoutY="386.0" rotate="90.0" startX="-50.0" stroke="#bfb9b9" strokeWidth="2.0" />
+      <Label layoutX="935.0" layoutY="140.0" styleClass="col-gray70" text="Off" textFill="WHITE" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1041.0" layoutY="140.0" styleClass="col-gray70" text="On" textFill="WHITE" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="992.0" layoutY="144.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" visible="false" width="46.0" />
+      <JFXToggleButton fx:id="valvecpre" alignment="BASELINE_CENTER" layoutX="983.0" layoutY="130.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" visible="false" />
+      <Label layoutX="774.0" layoutY="34.0" text="Select Crossover" textFill="#0e3c87" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Line endX="250.0" layoutX="872.0" layoutY="117.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" visible="false" />
+      <Line endX="250.0" layoutX="872.0" layoutY="193.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" visible="false" />
+      <Label layoutX="771.0" layoutY="138.0" styleClass="col-gray70" text="Pressure" textFill="#bcbcbc" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Line layoutX="622.0" layoutY="269.0" rotate="90.0" startX="280.0" stroke="#bfb9b9" strokeWidth="2.0" visible="false" />
+      <Label layoutX="935.0" layoutY="216.0" styleClass="col-gray70" text="Off" textFill="WHITE" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1041.0" layoutY="216.0" styleClass="col-gray70" text="On" textFill="WHITE" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="300.0" arcWidth="30.0" fill="#1f93ff00" height="28.0" layoutX="992.0" layoutY="220.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" style="-fx-fill: white;" visible="false" width="46.0" />
+      <JFXToggleButton fx:id="valvecflow" alignment="BASELINE_CENTER" layoutX="983.0" layoutY="206.0" text=" " toggleColor="#0e3c87" toggleLineColor="WHITE" unToggleLineColor="#99999903" visible="false" />
+      <Line endX="250.0" layoutX="872.0" layoutY="269.0" startX="-100.0" stroke="#bfb9b9" strokeWidth="2.0" visible="false" />
+      <Label layoutX="771.0" layoutY="214.0" styleClass="col-gray70" text="Flov" textFill="#bcbcbc" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnapply" layoutX="587.0" layoutY="466.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="223.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom-right" text="Apply" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

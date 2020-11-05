@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import java.lang.String?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.fontawesome.AwesomeIcon?>
+<?import de.jensd.fx.fontawesome.AwesomeIconsStack?>
+<?import de.jensd.fx.fontawesome.Icon?>
+
+<AnchorPane prefHeight="480.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KeyboardController">
+   <children>
+      <AnchorPane fx:id="keyanc" layoutX="14.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="793.0" />
+      <TextField fx:id="keyboardinput" layoutX="29.0" layoutY="27.0" prefHeight="37.0" prefWidth="744.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label fx:id="lblkeyboard" layoutX="33.0" layoutY="7.0" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

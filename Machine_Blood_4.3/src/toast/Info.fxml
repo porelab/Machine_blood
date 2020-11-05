@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="240.0" prefWidth="445.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-width: 2px;" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toast.infoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e0e06e" height="40.0" layoutX="3.0" layoutY="4.0" stroke="#c9c3c3" strokeType="INSIDE" strokeWidth="0.0" width="442.0" />
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="16.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@errorico.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="errorname" layoutX="52.0" layoutY="10.0" text="Connetion error" textFill="#676865">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4e539" height="66.0" layoutY="164.0" stroke="#c9c3c3" strokeType="INSIDE" strokeWidth="0.0" width="442.0" />
+      <Button fx:id="btnclose" layoutX="401.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" text="X" textFill="#000000a6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnok" layoutX="323.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="OK" />
+      <Circle fill="#1f93ff00" layoutX="36.0" layoutY="197.0" radius="13.0" stroke="#bfb8b8" strokeType="INSIDE" />
+      <Label layoutX="32.0" layoutY="184.0" text="?" textFill="#000000ba">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnhelp" layoutX="65.0" layoutY="184.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Help" />
+      <Label fx:id="errorcode" layoutX="23.0" layoutY="49.0" text="#0101" textFill="#412d6e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="90.0" text="Description :" />
+      <Label fx:id="errordescri" alignment="TOP_LEFT" layoutX="93.0" layoutY="91.0" prefHeight="52.0" prefWidth="299.0" text="Label" wrapText="true" />
+   </children>
+</AnchorPane>

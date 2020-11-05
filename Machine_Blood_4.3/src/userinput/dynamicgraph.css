@@ -1,0 +1,232 @@
+/* ====== CHART PLOT BACKGROUND =========================================================== */
+
+.pagination{
+	-fx-base:black;
+}
+.pagination .toggle-button , .mypage .button{
+	-fx-background-radius:15px;
+	-fx-padding: 0px;
+}
+.pagination .button{
+	-fx-background-color: gray;
+	-fx-padding: 5 15 5 16px;
+}
+.pagination .label {
+	-fx-text-fill:gray ;
+}
+
+.axis {
+    -fx-font-size: 1.4em;    
+    /*-fx-tick-label-fill: #0079b6 ;*/
+    -fx-tick-label-fill: #888888 ;
+
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 0;
+    -fx-minor-tick-length: 0;
+    -fx-tick-label-font-size: 1.1em;
+}
+
+.axis:left{
+	 -fx-border-color: transparent ;
+}
+ .axis:bottom{
+	 -fx-border-color: transparent ;
+}
+ 
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #999999;
+    -fx-stroke-dash-offset: 10;
+    -fx-stroke-borders: aliceblue ;
+    -fx-stroke-line-join: bevel ;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #999999;
+    
+    -fx-stroke-dash-offset: 10;
+}
+
+.chart-vertical-zero-line {
+    -fx-stroke: #888888;
+    -fx-stroke-width: 2px;
+}
+.chart-horizontal-zero-line {
+    -fx-stroke: #888888;
+    
+    -fx-stroke-width: 2px;
+}
+/* ====== SCATTER CHART =========================================================== */
+
+/* ====== LINE CHART =========================================================== */
+.chart-line-symbol {
+    -fx-background-color: #f9d900, white;
+    -fx-background-insets: 0, 5;
+    -fx-background-radius: 5px;
+    -fx-padding: 4px;
+}
+.chart-series-line {
+    -fx-stroke: #f9d900;
+    -fx-stroke-width: 2.3px;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.3) , 8, 0.0 , 0 , 3 );
+}
+	
+		
+.default-color0.chart-line-symbol { -fx-background-color: #ff0000, #FF0000; }
+.default-color1.chart-line-symbol { -fx-background-color: #0051d4, #0051d4; }
+.default-color2.chart-line-symbol { -fx-background-color: #ffcc00, #ffcc00; }
+.default-color3.chart-line-symbol { -fx-background-color: #8f1b91, #8f1b91; }
+.default-color4.chart-line-symbol { -fx-background-color: #fe9901, #fe9901; }
+.default-color5.chart-line-symbol { -fx-background-color: #00ba00, #00ba00; }
+.default-color6.chart-line-symbol { -fx-background-color: #c62b00, white; }
+.default-color7.chart-line-symbol { -fx-background-color: #ff5700, white; }
+.default-color0.chart-series-line { -fx-stroke: #FF0000; }
+.default-color1.chart-series-line { -fx-stroke: #0051d4; }
+.default-color2.chart-series-line { -fx-stroke: #ffcc00; }
+.default-color3.chart-series-line { -fx-stroke: #8f1b91; }
+.default-color4.chart-series-line { -fx-stroke: #fe9901; }
+.default-color5.chart-series-line { -fx-stroke: #00ba00; }
+.default-color6.chart-series-line { -fx-stroke: #c62b00; }
+.default-color7.chart-series-line { -fx-stroke: #ff5700; }
+
+/* ====== AREA CHART =========================================================== */
+.chart-area-symbol {
+    -fx-background-color: #f9d900, white;
+    -fx-background-insets: 0, 5;
+    -fx-background-radius: 5px;
+    -fx-padding: 4px;
+}
+
+
+
+.default-color0.chart-area-symbol { -fx-background-color: #DBBA4F, #DBBA4F; }
+.default-color1.chart-area-symbol { -fx-background-color: #3F76B5, #3F76B5; }
+.default-color2.chart-area-symbol { -fx-background-color: #D67479, #D67479; }
+.default-color3.chart-area-symbol { -fx-background-color: #12B59F, #12B59F; }
+.default-color4.chart-area-symbol { -fx-background-color: #F5903D, #F5903D; }
+.default-color5.chart-area-symbol { -fx-background-color: #BC4644, #BC4644; }
+.default-color6.chart-area-symbol { -fx-background-color: #AD4F73, #AD4F73; }
+.default-color7.chart-area-symbol { -fx-background-color: #40A7C1, #40A7C1; }
+.default-color0.chart-series-area-line { -fx-stroke: #DBBA4F; }
+.default-color1.chart-series-area-line { -fx-stroke: #3F76B5; }
+.default-color2.chart-series-area-line { -fx-stroke: #D67479; }
+.default-color3.chart-series-area-line { -fx-stroke: #12B59F; }
+.default-color4.chart-series-area-line { -fx-stroke: #F5903D; }
+.default-color5.chart-series-area-line { -fx-stroke: #BC4644; }
+.default-color6.chart-series-area-line { -fx-stroke: #AD4F73; }
+.default-color7.chart-series-area-line { -fx-stroke: #40A7C1; }
+
+
+.chart-series-area-line {
+   -fx-stroke: #f9d900;
+    -fx-stroke-width: 2.3px;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.3) , 8, 0.0 , 0 , 3 );
+
+}
+
+.chart-series-area-fill {
+    -fx-stroke: null;
+    -fx-fill: #f9d90044;
+}
+.default-color0.chart-series-area-fill { -fx-fill: #f9d90044; }
+.default-color1.chart-series-area-fill { -fx-fill: #a9e20044; }
+.default-color2.chart-series-area-fill { -fx-fill: #22bad944; }
+.default-color3.chart-series-area-fill { -fx-fill: #0181e244; }
+.default-color4.chart-series-area-fill { -fx-fill: #2f357f44; }
+.default-color5.chart-series-area-fill { -fx-fill: #86006144; }
+.default-color6.chart-series-area-fill { -fx-fill: #c62b0044; }
+.default-color7.chart-series-area-fill { -fx-fill: #ff570044; }
+.area-legend-symbol {
+    -fx-padding: 6px;
+    -fx-background-radius: 6px; /* makes sure this remains circular */
+    -fx-background-insets: 0, 3;
+}
+/* ====== BUBBLE CHART =========================================================== */
+.bubble-legend-symbol {
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+}
+.chart-bubble {
+    -fx-bubble-fill: #f9d900;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 80%, derive(-fx-bubble-fill,20%), derive(-fx-bubble-fill,-30%));
+}
+.default-color0.chart-bubble { -fx-bubble-fill: #f9d900aa; }
+.default-color1.chart-bubble { -fx-bubble-fill: #a9e200aa; }
+.default-color2.chart-bubble { -fx-bubble-fill: #22bad9aa; }
+.default-color3.chart-bubble { -fx-bubble-fill: #0181e2aa; }
+.default-color4.chart-bubble { -fx-bubble-fill: #2f357faa; }
+.default-color5.chart-bubble { -fx-bubble-fill: #860061aa; }
+.default-color6.chart-bubble { -fx-bubble-fill: #c62b00aa; }
+.default-color7.chart-bubble { -fx-bubble-fill: #ff5700aa; }
+
+/* ====== BAR CHART =========================================================== */
+/* TODO flip gradient vertical for negative bars */
+.chart-bar {
+    -fx-bar-fill: #22bad9;
+    -fx-background-color: linear-gradient(derive(-fx-bar-fill,-30%), derive(-fx-bar-fill,-40%)),
+                          linear-gradient(derive(-fx-bar-fill,80%), derive(-fx-bar-fill, 0%)),
+                          linear-gradient(derive(-fx-bar-fill,30%), derive(-fx-bar-fill,-10%));
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+}
+
+.negative.chart-bar {
+   -fx-background-color: linear-gradient(to top, derive(-fx-bar-fill,-30%), derive(-fx-bar-fill,-40%)),
+                          linear-gradient(to top, derive(-fx-bar-fill, 80%), derive(-fx-bar-fill,0%)),
+                          linear-gradient(to top, derive(-fx-bar-fill,30%), derive(-fx-bar-fill,-10%));
+   -fx-background-radius: 0 0 5 5, 0 0 4 4, 0 0 3 3;
+}
+.bar-chart:horizontal .chart-bar, .stacked-bar-chart:horizontal .chart-bar {
+    -fx-background-color: linear-gradient(to left, derive(-fx-bar-fill,-30%), derive(-fx-bar-fill,-40%)),
+                          linear-gradient(to left, derive(-fx-bar-fill,80%), derive(-fx-bar-fill, 0%)),
+                          linear-gradient(to left, derive(-fx-bar-fill,30%), derive(-fx-bar-fill,-10%));
+    -fx-background-radius: 0 5 5 0, 0 4 4 0, 0 3 3 0;
+}
+.bar-chart:horizontal .negative.chart-bar, .stacked-bar-chart:horizontal .negative.chart-bar {
+    -fx-background-color: linear-gradient(to right, derive(-fx-bar-fill,-30%), derive(-fx-bar-fill,-40%)),
+                          linear-gradient(to right, derive(-fx-bar-fill, 80%), derive(-fx-bar-fill, 0%)),
+                          linear-gradient(to right, derive(-fx-bar-fill,30%), derive(-fx-bar-fill,-10%));
+    -fx-background-radius: 5 0 0 5, 4 0 0 4, 3 0 0 3;
+}
+.default-color0.chart-bar { -fx-bar-fill: #f9d900; }
+.default-color1.chart-bar { -fx-bar-fill: #a9e200; }
+.default-color2.chart-bar { -fx-bar-fill: #22bad9; }
+.default-color3.chart-bar { -fx-bar-fill: #0181e2; }
+.default-color4.chart-bar { -fx-bar-fill: #2f357f; }
+.default-color5.chart-bar { -fx-bar-fill: #860061; }
+.default-color6.chart-bar { -fx-bar-fill: #c62b00; }
+.default-color7.chart-bar { -fx-bar-fill: #ff5700; }
+.bar-legend-symbol {
+    -fx-padding: 8px;
+}
+/* ====== PIE CHART ============================================================== */
+.chart-pie {
+    -fx-pie-color: #2f357f;
+    -fx-background-color: radial-gradient(radius 100%, derive(-fx-pie-color,55%), derive(-fx-pie-color,-20%));
+    -fx-background-insets: 0;
+    -fx-border-color: derive(-fx-pie-color,-30%);
+}
+.chart-pie-label {
+    -fx-padding: 3px;
+    -fx-fill: -fx-text-base-color;
+}
+.chart-pie-label-line {
+    -fx-stroke: #aaaaaa;
+    -fx-fill: #aaaaaa;
+}
+.default-color0.chart-pie { -fx-pie-color: #f9d900; }
+.default-color1.chart-pie { -fx-pie-color: #a9e200; }
+.default-color2.chart-pie { -fx-pie-color: #22bad9; }
+.default-color3.chart-pie { -fx-pie-color: #0181e2; }
+.default-color4.chart-pie { -fx-pie-color: #2f357f; }
+.default-color5.chart-pie { -fx-pie-color: #860061; }
+.default-color6.chart-pie { -fx-pie-color: #c62b00; }
+.default-color7.chart-pie { -fx-pie-color: #ff5700; }
+.negative.chart-pie {
+    -fx-pie-color: transparent;
+    -fx-background-color: white;
+}
+.pie-legend-symbol.chart-pie {
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+    -fx-border-color: null;
+}

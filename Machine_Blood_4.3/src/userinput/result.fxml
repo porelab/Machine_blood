@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane fx:id="maincontent1" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.ResultController">
+   <children>
+      <AnchorPane maxHeight="639.0" minHeight="638.0" prefHeight="638.0" prefWidth="1135.0">
+         <children>
+            <ImageView fitHeight="647.0" fitWidth="1135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@final%20software%20interface%20screen-02.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnhome" layoutX="927.0" layoutY="522.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="102.0" text="Goto Home" textFill="WHITE" AnchorPane.bottomAnchor="84.0" AnchorPane.rightAnchor="106.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnlivetest" layoutX="817.0" layoutY="522.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" text="Live Test" textFill="WHITE" AnchorPane.bottomAnchor="84.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="358.0" layoutY="14.0" text="Sample name" textFill="#f7f7f7" underline="true" />
+            <Label fx:id="lblsname" layoutX="318.0" layoutY="37.0" prefHeight="23.0" prefWidth="151.0" style="-fx-alignment: center;" textAlignment="CENTER" textFill="#fff9f9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff1a" height="331.0" layoutX="725.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="396.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="34.0" layoutX="725.0" layoutY="122.0" stroke="#ffffffcc" strokeType="INSIDE" width="396.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="249.0" layoutX="725.0" layoutY="154.0" stroke="#ffffffbb" strokeType="INSIDE" width="396.0" AnchorPane.leftAnchor="725.0" AnchorPane.topAnchor="154.0" />
+            <Label layoutX="737.0" layoutY="124.0" text="Sample" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="804.0" layoutY="124.0" text="Mean " textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="scrfilename" layoutX="725.0" layoutY="154.0" prefHeight="249.0" prefWidth="396.0" styleClass="scrl" stylesheets="@../application/application.css" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="725.0" layoutY="403.0" stroke="#ffffffcc" strokeType="INSIDE" width="396.0" />
+            <Label layoutX="773.0" layoutY="406.0" text="Avg. Bubble Point Diamter" textFill="#ffffffe5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" layoutX="725.0" layoutY="426.0" stroke="#ffffffcc" strokeType="INSIDE" width="396.0" />
+            <Label layoutX="773.0" layoutY="430.0" text="Avg. Mean Pore Diamter" textFill="#ffffffe5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="873.0" layoutY="124.0" text="Mean" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="938.0" layoutY="125.0" text="Mean" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="1013.0" layoutY="126.0" text="Mean" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="739.0" layoutY="137.0" text="Name" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="798.0" layoutY="137.0" text="Pressure" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="932.0" layoutY="138.0" text="Pressure" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="1007.0" layoutY="138.0" text="Diamter" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="867.0" layoutY="137.0" styleClass="scrl" stylesheets="@../application/application.css" text="Diamter" textFill="#ffffffe5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="root" layoutX="3.0" layoutY="86.0" maxHeight="591.0" maxWidth="706.0" minHeight="422.0" minWidth="706.0" prefHeight="549.0" prefWidth="706.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="86.0">
+               <children>
+                  <Pagination fx:id="pagination1" layoutX="7.0" maxHeight="591.0" maxWidth="660.0" minHeight="422.0" minWidth="660.0" prefHeight="509.0" prefWidth="660.0" stylesheets="@../../../Machine_BET_dynamic/src/report/dynamicgraph.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="avgbub" layoutX="952.0" layoutY="405.0" prefHeight="17.0" prefWidth="72.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="avgmean" layoutX="952.0" layoutY="427.0" prefHeight="17.0" prefWidth="72.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

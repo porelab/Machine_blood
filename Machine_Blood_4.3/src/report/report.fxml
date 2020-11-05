@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1368.0" styleClass="bgwhite" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.ReportController">
+   <children>
+      <Button fx:id="report" layoutX="1008.0" layoutY="573.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="79.0" text="Get Report" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff1a" height="180.0" layoutX="384.0" layoutY="432.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="733.0" AnchorPane.leftAnchor="384.0" />
+      <AnchorPane fx:id="pagination1" layoutX="23.0" layoutY="79.4375" maxHeight="658.0" maxWidth="904.0" minHeight="422.0" minWidth="744.0" prefHeight="581.0" prefWidth="892.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="23.0" />
+      <AnchorPane fx:id="slides" layoutX="393.0" layoutY="450.0" prefHeight="151.0" prefWidth="715.0" visible="false" />
+      <ScrollPane fx:id="scrfilename" layoutX="965.0" layoutY="190.0" maxHeight="517.0" maxWidth="555.0" minHeight="208.0" minWidth="335.0" prefHeight="517.0" prefWidth="375.0" styleClass="scrl" stylesheets="@../application/application.css" />
+      <Line endX="455.0" layoutX="885.0" layoutY="127.0" startX="80.0" stroke="#2a91d8" />
+      <Line endX="455.0" layoutX="885.0" layoutY="188.0" startX="80.0" stroke="#2a91d8" />
+      <Label layoutX="976.0" layoutY="121.0" prefHeight="67.0" prefWidth="89.0" text="Sample Name" textFill="#646161" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="1192.0" layoutY="121.0" prefHeight="67.0" prefWidth="61.0" text="Pressure" textFill="#646161" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="1265.0" layoutY="123.0" prefHeight="67.0" prefWidth="61.0" text="Result" textFill="#646161" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="133.0" fitWidth="1404.0" layoutX="8.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@cloud.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="24.0" prefHeight="35.0" prefWidth="194.0" styleClass="font-montserrat-semiBold" text="Result" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Line endX="600.0" layoutX="633.0" layoutY="428.0" rotate="90.0" stroke="#545252" />
+      <Line endX="455.0" layoutX="884.0" layoutY="730.0" startX="80.0" stroke="#2a91d8" />
+      <Button fx:id="btnback" layoutX="1269.0" layoutY="18.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="60.0" styleClass="trsnpbtn" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="18.0">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnsavereport" layoutX="1196.0" layoutY="18.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="60.0" styleClass="trsnpbtn" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="18.0">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@report.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnhome" layoutX="1125.0" layoutY="18.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="60.0" styleClass="trsnpbtn" AnchorPane.rightAnchor="209.0" AnchorPane.topAnchor="18.0">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="700.0" layoutX="677.5" layoutY="102.0" AnchorPane.rightAnchor="0.0">
+         <stroke>
+            <LinearGradient endX="0.08095238095238094" endY="0.6761904761904762" startX="0.6619047619047619">
+               <stops>
+                  <Stop color="#656161" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Label fx:id="grlable" alignment="CENTER" layoutX="5.0" layoutY="93.0" prefHeight="37.0" prefWidth="903.0" text="Pressure Vs Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../application/application.css" />
+      <URL value="@../application/new_application.css" />
+   </stylesheets>
+</AnchorPane>

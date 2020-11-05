@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NLogoutpopupController">
+   <children>
+      <AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" style="-fx-border-width: 5; -fx-border-color: white;" styleClass="firstpagebk" stylesheets="@../application/new_application.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="700.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" AnchorPane.bottomAnchor="253.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@saveproject.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnstart" layoutX="375.0" layoutY="139.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom-right" text="Yes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Label layoutX="34.0" layoutY="22.0" text="Are you sure want to Logout ?">
+               <styleClass>
+                  <String fx:value="font-montserrat-semiBold" />
+                  <String fx:value="col-gray70" />
+               </styleClass>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btncancel" layoutX="173.0" layoutY="140.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom-right" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Label layoutX="254.0" layoutY="112.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

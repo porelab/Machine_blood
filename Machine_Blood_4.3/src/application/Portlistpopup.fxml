@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="185.0" prefWidth="392.0" styleClass="bgwhite" stylesheets="@new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PortlistpopupController">
+   <children>
+      <ImageView fitHeight="45.0" fitWidth="392.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@quickh.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="7.0" styleClass="font-montserrat-semiBold" text="Port" textFill="WHITE" AnchorPane.topAnchor="7.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btncancel" layoutX="635.0" layoutY="17.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" styleClass="btnCss" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@close1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Rectangle arcHeight="500.0" arcWidth="50.0" fill="#bfb9b900" height="48.0" layoutX="67.0" layoutY="62.0" stroke="#bfb9b9" strokeType="INSIDE" strokeWidth="2.0" width="258.0" />
+      <ImageView fx:id="imgdownarrow1" fitHeight="25.0" fitWidth="25.0" layoutX="293.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@downarrow.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmbcom" layoutX="72.0" layoutY="61.0" prefHeight="45.0" prefWidth="247.0" promptText="Select Port">
+         <styleClass>
+            <String fx:value="cmbtrasperant" />
+            <String fx:value="combo-boxport" />
+         </styleClass></ComboBox>
+      <Button fx:id="btnapply" layoutX="235.0" layoutY="140.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" styleClass="linear-grad-to-bottom-right" text="Apply" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="lblcmb" layoutX="72.0" layoutY="137.0" prefHeight="31.0" prefWidth="159.0" />
+      <Button fx:id="btnrefrace" layoutX="332.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" styleClass="btnCss">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@refresh.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

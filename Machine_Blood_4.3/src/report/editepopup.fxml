@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root1" prefHeight="350.0" prefWidth="600.0" styleClass="bgwhite" stylesheets="@new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.EditepopupController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@quickh.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="12.0" styleClass="font-montserrat-semiBold" text="Edite file" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="mainsrollpane" layoutX="15.0" layoutY="75.0" prefHeight="242.0" prefWidth="623.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <Button layoutX="664.0" layoutY="288.0" mnemonicParsing="false" text="Cancel" />
+      <Button layoutX="663.0" layoutY="221.0" mnemonicParsing="false" text="Update" />
+   </children>
+</AnchorPane>

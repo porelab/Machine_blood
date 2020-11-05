@@ -1,0 +1,341 @@
+.firstpagebk
+{     -fx-background-size: 100% 100%;  
+    
+       -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #0d3c88, #2a91d8); 
+       
+       
+}
+
+.logoutbtn
+{
+    -fx-background-image: url('profile.png');
+     -fx-background-size: 100% 100%;  
+}
+
+.usericon
+{
+    -fx-background-image: url('profile_A.png');
+     -fx-background-size: 100% 100%;  
+}
+
+.maincircle
+{
+    -fx-background-image: url('Test.png');
+     -fx-background-size: 100% 100%;  
+}
+
+.maincircrevers
+{
+    -fx-background-image: url('quickrev.png');
+     -fx-background-size: 100% 100%;  
+}
+
+.quickt
+{
+    -fx-background-image: url('quick.png');
+     -fx-background-size: 100% 100%;  
+}
+.livetest
+{
+    -fx-background-image: url('livetest.png');
+     -fx-background-size: 100% 100%;  
+}
+.report
+{
+    -fx-background-image: url('report.png');
+     -fx-background-size: 100% 100%;  
+}
+
+.homei
+{
+    -fx-background-image: url('home.png');
+     -fx-background-size: 100% 100%;  
+}
+.wifii
+{
+    -fx-background-image: url('wifi.png');
+     -fx-background-size: 100% 100%;  
+}
+.settingi
+{
+    -fx-background-image: url('setting.png');
+     -fx-background-size: 100% 100%;  
+}
+.cloudi
+{
+    -fx-background-image: url('cloud.png');
+     -fx-background-size: 100% 100%;  
+}
+
+
+
+
+/*OLDD 
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:260px;
+  -fx-tab-max-width:260px;
+  -fx-tab-min-height:40px;
+  -fx-tab-max-height:40px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+    
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+*/
+
+
+
+/*Button transpernt */
+.background_trans
+{
+	-fx-background-color: #00ffffff;
+	
+}
+
+.transperant_comm
+ {
+	-fx-background-color: transparent;
+ }
+ 
+ .tab-pane1 .tab-header-area {
+    visibility: hidden ;
+}
+
+/*combobox */
+
+ .combo-box .cell:selected {
+    -fx-text-fill: white;
+      -fx-font-size: 16px;
+}
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color:  white;
+    -fx-text-fill: black ;
+     -fx-font-size: 20px;
+    -fx-font-family: "Calibri" ;
+}
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-text-fill: white ;
+    -fx-background-color: #108bc5 ;
+}
+
+
+
+/*Table backround */
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {   
+    -fx-background-color: transparent ;
+    
+    -fx-stroke: transparent;
+    -fx-size:50;
+    -fx-alignment: CENTER ;    
+    -fx-text-alignment: center;
+
+}
+
+
+.list-cell {
+  -fx-background-color: transparent;
+  -fx-font-size:15.0;
+     -fx-text-fill: white;
+    
+}
+.list-view {
+  -fx-background-color: transparent;
+  -fx-background-insets: 2 ;
+}
+
+.table-view
+{
+-fx-background-color: transparent ;
+    	
+}
+
+.table-row-cell:filled:hover {
+
+    -fx-size:50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+
+}
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER 
+
+}
+
+
+
+
+.anchorPanePopUpError {
+    -fx-border-color: #BDC3C7;
+    -fx-border-width: 5px;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+.scrl
+{
+	  -fx-background-color: rgba(255, 255, 255, 0.0);
+	 
+}
+.bgtrans
+{
+	  -fx-background-color: rgba(255, 255, 255, 0.1);
+	 
+}
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+.scroll-pane > .viewport { 
+   -fx-background-color: transparent;
+}
+
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px; 
+-fx-text-fill: red ;
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+-fx-text-fill: red ;
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #28a3f4;
+-fx-text-fill: red ;
+}
+.materialDesign-white .arc{
+	-fx-stroke:  #ffffff;
+}
+
+.materialDesign-blue .arc{
+	-fx-stroke: #1ba188;
+}
+
+
+
+.mylist .list-cell:filled:selected:focused,.mylist .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#aaaaaa 0%, #aaaaaa 25%, #aaaaaa 75%, #aaaaaa 100%);
+    -fx-text-fill: black;
+}
+
+.mylist   .list-cell {
+        -fx-background-color: null;
+       -fx-text-fill: linear-gradient( from 0.0% 0.0% to 0.0% 50.0%, reflect, rgba(255,0,0,0.28) 0.0, rgba(102,243,255,0.58) 50.0, rgba(179,179,179,0.45) 70.0, rgba(179,179,179,0.45) 100.0);
+    }
+  .mylist   .list-cell:hover {
+        -fx-text-fill:linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, reflect, rgb(255,255,255) 0.0, rgb(255,255,77) 100.0);
+    }
+    
+    /*Clode icon btn */
+.trsnpbtn
+{
+	-fx-background-color: #ffffff;
+}
+
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: #339999;
+    -fx-text-fill: white;
+}
+
+/*Radio Button Fill-Color 
+
+.radio-button {
+    -fx-text-fill: yourColor;
+}    
+*/
+
+.progress-bar {
+    -fx-background-color: transparent ;
+ 
+}
+ 
+.progress-bar .track{
+    -fx-background-color: transparent;
+
+}
+ 
+.progress-bar .bar { 
+    -fx-background-color: white ;
+
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #6096EE 75%, #6096EE 100%);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+
+}
+.jfx-rippler {
+    -jfx-rippler-fill: red;
+}
+
+.list-cell:odd {
+    -fx-cell-hover-color: #0093ff;
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-cell-hover-color:#D3D3D3 ;
+    -fx-background-color: #D3D3D3;
+    -fx-text-fill: white;
+}
+.mylist .list-cell:filled:selected:focused,.mylist .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#aaaaaa 0%, #aaaaaa 25%, #aaaaaa 75%, #aaaaaa 100%);
+    -fx-text-fill: black;
+}
+
+.mylist   .list-cell {
+        -fx-background-color: #417158;
+       -fx-text-fill: white ;
+       
+    }
+

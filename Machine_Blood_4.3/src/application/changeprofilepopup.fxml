@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="250.0" maxWidth="700.0" minHeight="250.0" minWidth="700.0" prefHeight="250.0" prefWidth="700.0" style="-fx-border-width: 5; -fx-border-color: white;" styleClass="firstpagebk" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChangeprofilepopupController">
+   <children>
+      <ImageView fitHeight="77.0" fitWidth="406.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="289.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@saveproject.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnsave" layoutX="520.0" layoutY="109.0" maxHeight="55.0" maxWidth="130.0" minHeight="55.0" minWidth="130.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0" style="-fx-background-radius: 50;" styleClass="linear-grad-to-bottom-right" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Button fx:id="btncancel" layoutX="650.0" layoutY="14.0" mnemonicParsing="false" styleClass="cmbtrasperant" text="X" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="67.0" layoutY="24.0" text="Confirmation">
+         <styleClass>
+            <String fx:value="font-montserrat-semiBold" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="txtconfirmpass" layoutX="14.0" layoutY="106.0" maxWidth="461.0" minWidth="296.0" prefHeight="60.0" prefWidth="461.0" promptText="Enter Password" styleClass="col-gray70" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXPasswordField>
+      <Label fx:id="lblerror" layoutX="341.0" layoutY="177.0" text="Wrong Password...." textFill="#f5f5f5" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXSpinner fx:id="loadicon" layoutX="26.0" layoutY="182.0" visible="false" />
+      <Label fx:id="loadlab" layoutX="74.0" layoutY="188.0" prefHeight="20.0" prefWidth="377.0" text="Updating.." textFill="#ffffffa4" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

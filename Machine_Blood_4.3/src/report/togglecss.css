@@ -1,0 +1,24 @@
+.toggle-button {
+   
+         -fx-font-family: 'Montserrat SemiBold';	
+         -fx-text-fill: #0000008b;
+    	-fx-background-color: #00000000;
+    	-fx-background-radius: 10px;
+  -fx-background-image: url('fl.png');
+    -fx-background-size: 70px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    
+		
+		}
+.toggle-button:selected {
+	   -fx-font-family: 'Montserrat SemiBold';	
+   
+    -fx-text-fill:#ffffff;
+    -fx-background-image: url('openfile.png');
+    -fx-background-size:70px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+
+

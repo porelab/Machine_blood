@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="562.0" prefWidth="1145.0" styleClass="bgwhite" stylesheets="@../application/new_application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinput.ScadaController">
+   <children>
+      <ImageView fitHeight="699.0" fitWidth="1190.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@mainframe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="liveimg" fitHeight="699.0" fitWidth="1190.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="ap" layoutX="281.0" layoutY="331.0" prefHeight="115.0" prefWidth="120.0" />
+      <ImageView fx:id="v1" fitHeight="75.0" fitWidth="80.0" layoutX="493.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="297.0" />
+      <ImageView fx:id="v2" fitHeight="75.0" fitWidth="72.0" layoutX="494.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="ap1" layoutX="35.0" layoutY="336.0" prefHeight="201.0" prefWidth="140.0" />
+      <AnchorPane fx:id="ap2" layoutX="607.0" layoutY="84.0" prefHeight="115.0" prefWidth="120.0" />
+      <ImageView fx:id="v3" fitHeight="74.0" fitWidth="72.0" layoutX="957.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+      <ImageView fx:id="v4" fitHeight="71.0" fitWidth="72.0" layoutX="1055.0" layoutY="298.0" pickOnBounds="true" />
+      <AnchorPane fx:id="ap6" layoutX="817.0" layoutY="193.0" prefHeight="86.0" prefWidth="116.0" />
+      <Label layoutX="726.0" layoutY="290.0" text="fm1" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fm1value" layoutX="625.0" layoutY="297.0" prefHeight="17.0" prefWidth="40.0" visible="false" />
+      <Label fx:id="fm2value" layoutX="625.0" layoutY="499.0" prefHeight="17.0" prefWidth="40.0" visible="false" />
+      <Label fx:id="pg1value" layoutX="811.0" layoutY="236.0" prefHeight="17.0" prefWidth="40.0" visible="false" />
+      <Label fx:id="pg2value" layoutX="943.0" layoutY="93.0" prefHeight="17.0" prefWidth="40.0" visible="false" />
+      <Rectangle arcHeight="60.0" arcWidth="40.0" fill="#1f93ff00" height="37.0" layoutX="622.0" layoutY="197.0" stroke="#968f8f" strokeType="INSIDE" width="96.0" />
+      <Button fx:id="setfc" layoutX="687.0" layoutY="205.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="cmbtrasperant">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <TextField fx:id="fc" layoutX="622.0" layoutY="197.0" prefHeight="28.0" prefWidth="67.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="cmbtrasperant" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </TextField>
+      <Rectangle arcHeight="60.0" arcWidth="40.0" fill="#1f93ff00" height="37.0" layoutX="294.0" layoutY="446.0" stroke="#968f8f" strokeType="INSIDE" width="96.0" />
+      <Button fx:id="setpr" layoutX="348.0" layoutY="454.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="cmbtrasperant">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <TextField fx:id="pr" layoutX="294.0" layoutY="446.0" prefHeight="28.0" prefWidth="67.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="cmbtrasperant" />
+            <String fx:value="col-gray70" />
+         </styleClass>
+      </TextField>
+      <ToggleButton fx:id="valve1" layoutX="496.0" layoutY="308.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="67.0" styleClass="cmbtrasperant" />
+      <ToggleButton fx:id="valve2" layoutX="501.0" layoutY="473.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="67.0" styleClass="cmbtrasperant" />
+      <ToggleButton fx:id="valve3" layoutX="962.0" layoutY="225.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="67.0" styleClass="cmbtrasperant" />
+      <ToggleButton fx:id="valve4" layoutX="1060.0" layoutY="311.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="67.0" styleClass="cmbtrasperant" />
+      <ImageView fx:id="v5new" fitHeight="74.0" fitWidth="72.0" layoutX="496.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
+      <ToggleButton fx:id="valve5new" layoutX="501.0" layoutY="115.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="67.0" styleClass="cmbtrasperant" />
+      <Label layoutX="315.0" layoutY="419.0" text="Regulator">
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Label layoutX="641.0" layoutY="171.0" text="Regulator">
+         <styleClass>
+            <String fx:value="col-gray70" />
+            <String fx:value="font-montserrat-semiBold" />
+         </styleClass>
+      </Label>
+      <Circle fill="WHITE" layoutX="875.0" layoutY="250.0" radius="25.0" stroke="#0062b2" strokeType="INSIDE" strokeWidth="3.0" visible="false" />
+      <AnchorPane fx:id="ap5" layoutX="934.0" layoutY="85.0" prefHeight="86.0" prefWidth="116.0" />
+      <Circle fill="WHITE" layoutX="992.0" layoutY="142.0" radius="25.0" stroke="#0062b2" strokeType="INSIDE" strokeWidth="3.0" visible="false" />
+      <AnchorPane fx:id="ap4" layoutX="610.0" layoutY="434.0" prefHeight="86.0" prefWidth="116.0" />
+      <Circle fill="WHITE" layoutX="668.0" layoutY="491.0" radius="25.0" stroke="#0062b2" strokeType="INSIDE" strokeWidth="3.0" visible="false" />
+      <AnchorPane fx:id="ap3" layoutX="611.0" layoutY="273.0" prefHeight="86.0" prefWidth="116.0" />
+      <Circle fill="WHITE" layoutX="669.0" layoutY="330.0" radius="25.0" stroke="#0062b2" strokeType="INSIDE" strokeWidth="3.0" visible="false" />
+      <Label fx:id="lblanc" layoutX="324.0" layoutY="367.0" styleClass="col-gray70" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblanc2" layoutX="650.0" layoutY="118.0" styleClass="col-gray70" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="513.0" layoutY="185.0" text="valve- B" />
+      <Label layoutX="511.0" layoutY="364.0" text="valve- A" />
+      <Label layoutX="513.0" layoutY="560.0" text="valve- C" />
+      <Label layoutX="1029.0" layoutY="205.0" text="valve- D" />
+      <Label layoutX="1073.0" layoutY="290.0" text="valve- E" />
+      <JFXToggleButton fx:id="valve6" layoutX="1030.0" layoutY="549.0" text="Valve- F" />
+   </children>
+</AnchorPane>
